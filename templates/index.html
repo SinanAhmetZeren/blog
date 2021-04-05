@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    
+<div class="jumbotron text-center" style="border-radius: 20px ;background-color: rgb(244, 161, 255); color: crimson; " >
+    <div style="display: inline-block; vertical-align: top; padding:60px">
+        <h3 style="font-size: 40px; float:inline-end  ;font-weight: 900; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bolder; letter-spacing: 2px;"> Welcome to Florestan's place</h3>
+        <p style="font-size: 30px;"> &#129436;&#129436;&#129436;&#129436;&#129436;&#129436;&#129436;&#129436;</p>
+        <p>{% if request.user.is_authenticated %}
+        Logged in as, {{request.user.username}}
+    {% else %}
+        Not Logged in
+    {% endif %} </p>
+    </div>
+    <div style="display: inline-block">
+        <img src="/static/parrot1.jpg" style="border-radius:20px ;width: 250px; display: block; margin-left: auto;" alt=" ">
+    </div>
+    <p>
+
+    
+    </p>
+
+
+</div>
+
+
+
+
+{% endblock body %}
